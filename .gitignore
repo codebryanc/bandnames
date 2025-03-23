@@ -1,0 +1,54 @@
+# Flutter/Dart/Pub related
+**/build/
+**/.dart_tool/
+**/.flutter-plugins
+**/.flutter-plugins-dependencies
+**/.packages
+**/pubspec.lock
+**/.pub/
+.migrate_working_dir/
+
+# macOS-specific
+**/*.DS_Store
+
+# IntelliJ-related
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# Xcode-related
+**/ios/Pods/
+**/ios/.symlinks/
+**/ios/Flutter/.lock
+**/ios/.generated/
+**/ios/Flutter/ephemeral/
+
+# VS Code-related
+.vscode/
+
+# Android-related
+/android/app/.gradle/
+/android/app/.cxx/
+/android/local.properties
+/android/app/**/build/
+/android/key.jks
+/android/app.keystore
+/android/key.properties
+
+# Obfuscation related
+app.*.map.json
+
+# Logs and temporary files
+*.log
+*.lock
+*.sw?
+*.tmp
+*.bak
+*.backup
+*.orig
+*.rej
+*~
+
+# FVM Version Cache
+.fvm/
