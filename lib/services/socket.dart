@@ -17,6 +17,7 @@ class SocketService with ChangeNotifier {
 
   ServerStatus get serverStatus => _serverStatus;
   IO.Socket get socket => _socket;
+  Function get emit => _socket.emit;
 
   SocketService() {
     _initConfig();
@@ -53,14 +54,5 @@ class SocketService with ChangeNotifier {
         print('Error: $data');
       }
     });
-
-    // socket.on('nuevo-mensaje', (payload) {
-    //     print('nuevo-mensaje: $payload');        
-    //     print('nuevo-mensaje: $payload[mensaje]');
-    //     print('nuevo-mensaje: $payload[nombre]');
-    // });
-
-
-  }
-  
+  }  
 }
