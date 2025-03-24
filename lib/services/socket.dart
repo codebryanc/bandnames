@@ -28,8 +28,6 @@ class SocketService with ChangeNotifier {
     IO.Socket socket = IO.io('http://${serverUrl}:3000/', {
       'transports': ['websocket'],
       'autoConnect': true,
-      'forceNew': true,
-      'reconnect': true,
     });
 
     socket.onConnect((_) {
@@ -53,6 +51,14 @@ class SocketService with ChangeNotifier {
         print('Error: $data');
       }
     });
+
+    // socket.on('nuevo-mensaje', (payload) {
+    //     print('nuevo-mensaje: $payload');        
+    //     print('nuevo-mensaje: $payload[mensaje]');
+    //     print('nuevo-mensaje: $payload[nombre]');
+    // });
+
+
   }
   
 }
